@@ -1,0 +1,259 @@
+footer {
+    .block-footer {
+        display: flex;
+        flex-direction: column;
+        .footer-one {
+            padding: 40px 50px;
+            background-color: #16232B;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .block-one {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                .block-btn {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 15px;
+                    .btn-basic {
+                        font-size: 16px;
+                        font-weight: 500;
+                        padding: 15px 20px;
+                        white-space: nowrap;
+                    }
+                    .btn-question {
+                        background: #FFFFFF;
+                        color: #16232B;
+                    }
+                    .btn-review {
+                        background: #16232B;
+                        border: 1px solid #FFFFFF;
+                        color: #FFFFFF;
+                    }
+                }
+                .contacts {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 10px;
+                }
+            }
+            .block-two {
+                h3 {
+                    margin: 0;
+                    color: #FFFFFF;
+                    font-size: 16px;
+                    font-weight: 600;
+                    padding-bottom: 10px;
+                }
+                p {
+                    margin: 0;
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: #FFFFFF;
+                    line-height: 120%;
+                }
+            }
+            .block-three {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                .tel, .email {
+                    h3 {
+                        margin: 0;
+                        font-size: 16px;
+                        font-weight: 600;
+                        color: #FFFFFF;
+                        margin-bottom: 10px;
+                    }
+                    p, a {
+                        margin: 0;
+                        font-size: 16px;
+                        font-weight: 400;
+                        color: #FFFFFF;  
+                    }
+                }
+            }
+            .block-four {
+                display: flex;
+                flex-direction: column;
+                gap: 21px;
+                a {
+                    margin: 0;
+                    color: #FFFFFF;
+                    font-size: 14px;
+                    font-weight: 400;
+                    text-decoration: none;
+                }
+            }
+        }
+        .footer-two {
+            background-color: #0F181D;
+            padding: 20px 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            .one, a {
+                color: #FFFFFF;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 120%;
+                opacity: 50%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    footer {
+        .block-footer {
+
+            .footer-one {
+                padding: 40px 30px;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 30px;
+
+                .block-one {
+                    grid-column: 1 / -1; 
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 20px;
+
+                    .block-btn {
+                        flex-direction: row;
+                        gap: 10px;
+
+                        .btn-basic {
+                            font-size: 14px;
+                            padding: 12px 16px;
+                        }
+                    }
+
+                    .contacts {
+                        gap: 10px;
+                    }
+                }
+
+                .block-two,
+                .block-three,
+                .block-four {
+                    grid-column: auto;
+                }
+
+                .block-two,
+                .block-three,
+                .block-four {
+                    h3 {
+                        font-size: 15px;
+                    }
+
+                    p, a {
+                        font-size: 14px;
+                    }
+                }
+                .block-four {
+                    a {
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    footer {
+        .block-footer {
+            .footer-one {
+                display: flex;
+                flex-direction: column;
+                padding: 40px 9.9px; 
+                .block-one { order: 1; }
+                .block-four { order: 2; }
+                .block-three { order: 3; }
+                .block-two { order: 4; }
+                .block-one {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 25px; 
+                    > *:first-child {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
+                    
+                    .block-btn {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 15px;
+                        width: 100%;
+                        .btn-basic {
+                            width: 100%;
+                            text-align: center;
+                        }
+                    }
+
+                    .contacts {
+                        justify-content: center;
+                    }
+
+                    padding-bottom: 30px;
+                }
+                .block-four {
+                    a {
+                        text-align: center;
+                    }
+                    
+                }
+
+                .block-three {
+                    padding: 25px 0;
+                    border-bottom: 1px solid #d9d9d937;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    .tel {
+                        h3, p {
+                            text-align: left;
+                        }
+                    }
+                    .email {
+                        h3, a {
+                            text-align: right;
+                        }
+                    }
+                }
+                .block-two {
+                    padding: 25px 0 0;
+                    p {
+                        font-size: 0;
+                    }
+                    p::before {
+                        display: block;
+                        content: "г. Пермь ул. Героев Хасана 105  корпус 70 офис 205  (склад готовой продукции №5)";
+                        font-size: 16px;
+                        color: #FFFFFF;
+                        line-height: 120%;
+                    }
+                }
+            }
+
+            .footer-two {
+                padding: 20px;
+                flex-direction: column; 
+                gap: 20px; 
+                text-align: center; 
+                .one {
+                    order: 1; 
+                }
+                a {
+                    order: 0; 
+                }
+            }
+        }
+    }
+}
