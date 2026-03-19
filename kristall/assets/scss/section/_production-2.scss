@@ -1,0 +1,279 @@
+.production-2 {
+  padding: 60px 50px 0;
+  h2 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 400;
+    padding-bottom: 40px;
+  }
+  .block-catalog {
+    height: 554px;
+    display: flex;
+    gap: 20px;
+    .block-catalog-one {
+      position: relative;
+      text-decoration: none;
+      width: 100%;
+      padding: 30px;
+      border-radius: 10px;
+      background: linear-gradient(150.41deg, #d9d9d9 -5.87%, #ffffff 102%);
+      .block-text {
+        display: flex;
+        justify-content: space-between;
+        .text {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+          h3 {
+            margin: 0;
+            color: #16232b;
+            font-size: 24px;
+            font-weight: 500;
+          }
+          p {
+            margin: 0;
+            color: #16232b;
+            font-size: 16px;
+            font-weight: 400;
+          }
+        }
+      }
+      .one {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      .two {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+    }
+
+    .block-catalog-two {
+      display: grid;
+      gap: 20px;
+      grid-template-areas:
+        "block-one block-two"
+        "block-free block-free";
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: 1.2fr 0.8fr;
+      height: 100%;
+      width: 100%;
+      a {
+        position: relative;
+        text-decoration: none;
+        padding: 30px;
+        border-radius: 10px;
+        background: linear-gradient(150.41deg, #d9d9d9 -5.87%, #ffffff 102%);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .block-text {
+          display: flex;
+          justify-content: space-between;
+          .text {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            h3 {
+              margin: 0;
+              color: #16232b;
+              font-size: 24px;
+              font-weight: 500;
+            }
+            p {
+              margin: 0;
+              color: #16232b;
+              font-size: 16px;
+              font-weight: 400;
+            }
+          }
+        }
+        .one {
+          position: absolute;
+          bottom: 10px;
+          right: 10px;
+        }
+      }
+
+      .block-one {
+        grid-area: block-one;
+      }
+      .block-two {
+        grid-area: block-two;
+      }
+      .block-free {
+        grid-area: block-free;
+      }
+      .block-one {
+        background-image: url("/assets/img/Rectangle.svg");
+        background-size: cover;
+        width: 490px;
+        height: 386px;
+        display: flex;
+        justify-content: flex-end;
+        .block-text {
+        }
+      }
+      .block-two {
+        width: 320px;
+        height: 386px;
+        background: linear-gradient(95.06deg, #F9F9F9 1%, #F9FAF9 93.36%);
+        .one {
+            bottom: 0;
+            right: 0;
+        }
+      }
+        .block-free {
+            height: 148px;
+            background: linear-gradient(88.18deg, #FFFFFF 0%, #D9D9D9 73.56%, #FFFFFF 100%);
+            .one {
+                width: 280px;
+                bottom: 0;
+                right: 100px;
+            }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .production-2 {
+    padding: 50px 30px 0;
+
+    .block-catalog {
+      display: grid;
+      height: 600px;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 20px;
+      grid-template-areas:
+        "main block-one"
+        "block-two block-free";
+ 
+      .block-catalog-one {
+        grid-area: main;
+        width: 100% !important; 
+        height: 100% !important;
+        box-sizing: border-box;
+        .one {
+            width: 200px;
+        }
+        .two {
+            width: 200px;
+        }
+      }
+      
+      .block-catalog-two {
+        display: contents; 
+        .block-one, .block-two, .block-free {
+          width: 100% !important;
+          height: 100% !important;
+          box-sizing: border-box;
+        }
+        
+        .block-one { 
+            grid-area: block-one; 
+
+        }
+        .block-two { 
+            grid-area: block-two;
+            .one {
+                width: 210px;
+            } 
+        }
+        .block-free { 
+            grid-area: block-free; 
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .production-2 {
+    padding: 30px 10px 0;
+
+    h2 {
+      font-size: 32px;
+      padding-bottom: 30px;
+    }
+
+    .block-catalog {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      height: auto;
+
+      .block-catalog-one {
+        width: 100%; 
+        height: 380px !important;
+        padding: 20px; 
+        .block-text {
+            .text {
+                h3 {
+                    font-size: 20px;
+                }
+                p {
+                    font-size: 16px;
+                    white-space: nowrap;
+                    line-height: 100%;
+                }
+            }
+        }
+        .one {
+            height: 469px;
+        }
+        .two {
+            width: 318px;
+        }
+      }
+      
+      .block-catalog-two {
+        width: 100%; 
+        display: grid;
+        grid-template-areas:
+          "block-one"
+          "block-two"
+          "block-free";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 20px;
+
+        .block-one {
+          width: 100% !important;
+          height: 360px !important; 
+          .block-text {
+            align-items: flex-end;
+          }
+        }
+        .block-two {
+          width: 100% !important;
+          height: 380px !important; 
+          .one {
+            width: 300px;
+          }
+        }
+        .block-free {
+          width: 100% !important;
+          height: 350px !important; 
+          .one {
+            width: 380px;
+            right: 0;
+          }
+        }
+      }
+
+      a {
+        padding: 20px;
+        .text {
+          h3 { font-size: 20px; }
+          p { font-size: 14px; }
+        }
+      }
+    }
+  }
+}
