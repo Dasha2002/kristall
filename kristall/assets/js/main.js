@@ -74,3 +74,29 @@ function closePopap() {
 });
 
 
+// Фиксированные контакты 
+document.addEventListener('DOMContentLoaded', function() {
+    const contactsBlock = document.querySelector('.contacts');
+
+    if (!contactsBlock) {
+        return;
+    }
+
+
+    const handleScroll = () => {
+        
+        const blockTopPosition = contactsBlock.getBoundingClientRect().top + window.scrollY;
+        const scrollPosition = window.scrollY;
+
+        if (scrollPosition > blockTopPosition) {
+        
+            contactsBlock.classList.add('contacts-fixed');
+        } else {
+            contactsBlock.classList.remove('contacts-fixed');
+        }
+    };
+
+    handleScroll();
+    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('resize', handleScroll);
+});

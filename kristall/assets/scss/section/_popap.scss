@@ -136,11 +136,19 @@ body.modal-open {
             text-align: center;
             cursor: pointer;
             transition: all 0.2s ease-in-out;
+            &:hover {
+              background-color: #FF8912;
+              border-color: #FF8912;
+              color: #fff;
+            }
           }
 
           input[type="radio"]:checked + label {
             background-color: #16232b;
             color: #fff;
+            &:hover {
+              background-color: #FF8912;
+            }
           }
         }
       }

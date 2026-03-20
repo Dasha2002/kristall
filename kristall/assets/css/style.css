@@ -25,6 +25,10 @@ button, input {
   border-radius: 10px;
   font-size: 16px;
   font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+.btn-basic:hover {
+  background-color: #FF8912;
 }
 
 body {
@@ -142,7 +146,7 @@ footer .block-footer {
 }
 footer .block-footer .footer-one {
   padding: 40px 50px;
-  background-color: #16232B;
+  background-color: #16232b;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -164,13 +168,22 @@ footer .block-footer .footer-one .block-one .block-btn .btn-basic {
   white-space: nowrap;
 }
 footer .block-footer .footer-one .block-one .block-btn .btn-question {
-  background: #FFFFFF;
-  color: #16232B;
+  background: #ffffff;
+  color: #16232b;
+}
+footer .block-footer .footer-one .block-one .block-btn .btn-question:hover {
+  background-color: #ff8912;
+  border-color: #ff8912;
+  color: #fff;
 }
 footer .block-footer .footer-one .block-one .block-btn .btn-review {
-  background: #16232B;
-  border: 1px solid #FFFFFF;
-  color: #FFFFFF;
+  background: #16232b;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+footer .block-footer .footer-one .block-one .block-btn .btn-review:hover {
+  border-color: #ff8912;
+  color: #ff8912;
 }
 footer .block-footer .footer-one .block-one .contacts {
   display: flex;
@@ -179,7 +192,7 @@ footer .block-footer .footer-one .block-one .contacts {
 }
 footer .block-footer .footer-one .block-two h3 {
   margin: 0;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 16px;
   font-weight: 600;
   padding-bottom: 10px;
@@ -188,7 +201,7 @@ footer .block-footer .footer-one .block-two p {
   margin: 0;
   font-size: 16px;
   font-weight: 400;
-  color: #FFFFFF;
+  color: #ffffff;
   line-height: 120%;
 }
 footer .block-footer .footer-one .block-three {
@@ -196,18 +209,22 @@ footer .block-footer .footer-one .block-three {
   flex-direction: column;
   gap: 30px;
 }
-footer .block-footer .footer-one .block-three .tel h3, footer .block-footer .footer-one .block-three .email h3 {
+footer .block-footer .footer-one .block-three .tel h3,
+footer .block-footer .footer-one .block-three .email h3 {
   margin: 0;
   font-size: 16px;
   font-weight: 600;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 10px;
 }
-footer .block-footer .footer-one .block-three .tel p, footer .block-footer .footer-one .block-three .tel a, footer .block-footer .footer-one .block-three .email p, footer .block-footer .footer-one .block-three .email a {
+footer .block-footer .footer-one .block-three .tel p,
+footer .block-footer .footer-one .block-three .tel a,
+footer .block-footer .footer-one .block-three .email p,
+footer .block-footer .footer-one .block-three .email a {
   margin: 0;
   font-size: 16px;
   font-weight: 400;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 footer .block-footer .footer-one .block-four {
   display: flex;
@@ -216,21 +233,22 @@ footer .block-footer .footer-one .block-four {
 }
 footer .block-footer .footer-one .block-four a {
   margin: 0;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 14px;
   font-weight: 400;
   text-decoration: none;
 }
 footer .block-footer .footer-two {
-  background-color: #0F181D;
+  background-color: #0f181d;
   padding: 20px 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-footer .block-footer .footer-two .one, footer .block-footer .footer-two a {
-  color: #FFFFFF;
+footer .block-footer .footer-two .one,
+footer .block-footer .footer-two a {
+  color: #ffffff;
   font-size: 16px;
   font-weight: 400;
   line-height: 120%;
@@ -273,7 +291,8 @@ footer .block-footer .footer-two .one, footer .block-footer .footer-two a {
   footer .block-footer .footer-one .block-four h3 {
     font-size: 15px;
   }
-  footer .block-footer .footer-one .block-two p, footer .block-footer .footer-one .block-two a,
+  footer .block-footer .footer-one .block-two p,
+  footer .block-footer .footer-one .block-two a,
   footer .block-footer .footer-one .block-three p,
   footer .block-footer .footer-one .block-three a,
   footer .block-footer .footer-one .block-four p,
@@ -337,10 +356,12 @@ footer .block-footer .footer-two .one, footer .block-footer .footer-two a {
     flex-direction: row;
     justify-content: space-between;
   }
-  footer .block-footer .footer-one .block-three .tel h3, footer .block-footer .footer-one .block-three .tel p {
+  footer .block-footer .footer-one .block-three .tel h3,
+  footer .block-footer .footer-one .block-three .tel p {
     text-align: left;
   }
-  footer .block-footer .footer-one .block-three .email h3, footer .block-footer .footer-one .block-three .email a {
+  footer .block-footer .footer-one .block-three .email h3,
+  footer .block-footer .footer-one .block-three .email a {
     text-align: right;
   }
   footer .block-footer .footer-one .block-two {
@@ -353,7 +374,7 @@ footer .block-footer .footer-two .one, footer .block-footer .footer-two a {
     display: block;
     content: "г. Пермь ул. Героев Хасана 105  корпус 70 офис 205  (склад готовой продукции №5)";
     font-size: 16px;
-    color: #FFFFFF;
+    color: #ffffff;
     line-height: 120%;
   }
   footer .block-footer .footer-two {
@@ -414,6 +435,13 @@ footer .block-footer .footer-two .one, footer .block-footer .footer-two a {
   letter-spacing: 2%;
   margin: 0;
 }
+.main-1 .block-main-1 .inf-main-1 .inf .contacts {
+  position: fixed;
+  bottom: 40px;
+  z-index: 50;
+  right: 55px;
+  transition: opacity 0.3s ease;
+}
 
 @media screen and (max-width: 1200px) {
   .main-1 {
@@ -434,6 +462,10 @@ footer .block-footer .footer-two .one, footer .block-footer .footer-two a {
   }
   .main-1 .block-main-1 .inf-main-1 .inf .text {
     max-width: 700px;
+  }
+  .main-1 .block-main-1 .inf-main-1 .inf .contacts {
+    position: relative;
+    padding-top: 30px;
   }
 }
 @media screen and (max-width: 700px) {
@@ -756,9 +788,17 @@ body.modal-open {
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
+.popap__content form .contacts-form .btn-contacts label:hover {
+  background-color: #FF8912;
+  border-color: #FF8912;
+  color: #fff;
+}
 .popap__content form .contacts-form .btn-contacts input[type=radio]:checked + label {
   background-color: #16232b;
   color: #fff;
+}
+.popap__content form .contacts-form .btn-contacts input[type=radio]:checked + label:hover {
+  background-color: #FF8912;
 }
 .popap__content form .btn-checkbox {
   display: flex;
@@ -1102,9 +1142,17 @@ body.modal-open {
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
+.form .block .form-block form .contacts-form .btn-contacts label:hover {
+  background-color: #FF8912;
+  border-color: #FF8912;
+  color: #fff;
+}
 .form .block .form-block form .contacts-form .btn-contacts input[type=radio]:checked + label {
   background-color: #16232b;
   color: #fff;
+}
+.form .block .form-block form .contacts-form .btn-contacts input[type=radio]:checked + label:hover {
+  background-color: #FF8912;
 }
 .form .block .form-block form .btn-checkbox {
   display: flex;
