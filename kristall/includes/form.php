@@ -23,7 +23,7 @@
                 <div class="contacts-form">
                     <h3>Выберите удобный способ связи:</h3>
                     <div class="btn-contacts">
-                        <input type="radio" id="form-contact-call" name="contact-method-form">
+                        <input type="radio" id="form-contact-call" name="contact-method-form" checked>
                         <label for="form-contact-call">Звонок</label>
 
                         <input type="radio" id="form-contact-telegram" name="contact-method-form">
@@ -38,7 +38,7 @@
                 </div>
 
                 <div class="btn-checkbox">
-                    <input type="checkbox" id="f-check">
+                    <input type="checkbox" id="f-check" checked>
                     <label for="f-check">Я даю согласие на обработку персональных данных в соответствии с политикой конфиденциальности</label>
                 </div>
 

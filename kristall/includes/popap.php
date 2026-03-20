@@ -38,7 +38,7 @@
             </div>
 
             <div class="btn-checkbox">
-                <input type="checkbox" id="check">
+                <input type="checkbox" id="check" checked>
                 <label for="check">Я даю согласие на обработку персональных данных в соответствии с политикой конфиденциальности</label>
             </div>
 

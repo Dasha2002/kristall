@@ -634,32 +634,35 @@ body.modal-open {
   width: 100%;
   height: 100%;
   z-index: 1000;
+  padding-top: 40px;
+  overflow-y: hidden;
+  box-sizing: border-box;
 }
 .popap.active {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+  overflow-y: auto;
 }
 .popap__overlay {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.29);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
+  z-index: 1;
 }
 .popap__content {
-  max-height: 90vh;
-  overflow-y: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+  max-width: 800px;
+  width: 90%;
   background-color: #fff;
   padding: 60px 67px 92px 70px;
-  z-index: 1001;
 }
 .popap__content .popap-heading {
   padding-bottom: 40px;

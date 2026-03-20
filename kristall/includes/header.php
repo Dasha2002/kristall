@@ -10,7 +10,7 @@
             <a href="about-us.php" class="menu">О КОМПАНИИ</a>
             <a href="production.php" class="menu">ПРОИЗВОДСТВО</a>
             <a href="contacts.php" class="menu">КОНТАКТЫ</a>
-            <a href="#" class="menu">ЗАКАЗАТЬ</a>
+            <a href="#" class="menu popap-btn">ЗАКАЗАТЬ</a>
         </nav>
     </div>
 </header>
