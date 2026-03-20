@@ -48,15 +48,18 @@ document.addEventListener('DOMContentLoaded', function() {
     const popapBtns = document.querySelectorAll('.popap-btn');
     const overlay = document.querySelector('.popap__overlay'); 
     function openPopap() {
-        popap.classList.add('active');
+    popap.classList.add('active');
 
-        document.body.style.overflow = 'hidden';
-    }
+    document.body.style.overflow = 'hidden';
+    document.documentElement.style.overflow = 'hidden';
+}
 
-    function closePopap() {
-        popap.classList.remove('active');
-        document.body.style.overflow = '';
-    }
+function closePopap() {
+    popap.classList.remove('active');
+
+    document.body.style.overflow = '';
+    document.documentElement.style.overflow = ''; 
+}
 
     popapBtns.forEach(btn => {
         btn.addEventListener('click', openPopap);

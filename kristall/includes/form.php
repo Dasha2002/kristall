@@ -23,23 +23,23 @@
                 <div class="contacts-form">
                     <h3>Выберите удобный способ связи:</h3>
                     <div class="btn-contacts">
-                        <input type="radio" id="contact-call" name="contact-method" value="call" checked>
-                        <label for="contact-call">Звонок</label>
+                        <input type="radio" id="form-contact-call" name="contact-method-form">
+                        <label for="form-contact-call">Звонок</label>
 
-                        <input type="radio" id="contact-telegram" name="contact-method" value="telegram">
-                        <label for="contact-telegram">Телеграмм</label>
+                        <input type="radio" id="form-contact-telegram" name="contact-method-form">
+                        <label for="form-contact-telegram">Телеграмм</label>
 
-                        <input type="radio" id="contact-max" name="contact-method" value="max">
-                        <label for="contact-max">Max</label>
+                        <input type="radio" id="form-contact-max" name="contact-method-form">
+                        <label for="form-contact-max">Max</label>
 
-                        <input type="radio" id="contact-email" name="contact-method" value="email">
-                        <label for="contact-email">Почта</label>
+                        <input type="radio" id="form-contact-email" name="contact-method-form">
+                        <label for="form-contact-email">Почта</label>
                     </div>
                 </div>
 
                 <div class="btn-checkbox">
-                    <input type="checkbox" id="check">
-                    <label for="check">Я даю согласие на обработку персональных данных в соответствии с политикой конфиденциальности</label>
+                    <input type="checkbox" id="f-check">
+                    <label for="f-check">Я даю согласие на обработку персональных данных в соответствии с политикой конфиденциальности</label>
                 </div>
 
                 <button class="btn-basic">Задать вопрос</button>

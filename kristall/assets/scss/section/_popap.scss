@@ -1,10 +1,14 @@
+body.modal-open {
+  height: 100vh;
+  overflow-y: hidden;
+}
 .popap {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
   transition:
-    opacity 0.3s ease,
-    visibility 0.3s ease;
+  opacity 0.3s ease,
+  visibility 0.3s ease;
   position: fixed;
   top: 0;
   left: 0;
@@ -30,6 +34,8 @@
   }
 
   &__content {
+    max-height: 90vh;     
+  overflow-y: auto;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -136,61 +142,62 @@
         }
       }
       .btn-checkbox {
-        display: flex;
-        align-items: flex-start;
-        gap: 17px;
-        padding-bottom: 30px;
+          display: flex;
+          align-items: flex-start;
+          gap: 17px;
+          padding-bottom: 30px;
 
-        .checkbox-input {
-          position: absolute;
-          opacity: 0;
-          width: 0;
-          height: 0;
-          pointer-events: none;
-        }
-
-        .checkbox-label {
-          position: relative;
-          padding-left: 30px;
-          cursor: pointer;
-          font-size: 14px;
-          font-weight: 300;
-          line-height: 1.4;
-          user-select: none;
-
-          &::before {
-            content: "";
+          input[type="checkbox"] {
             position: absolute;
-            left: 0;
-            top: 2px;
-            width: 15px;
-            height: 15px;
-            background-color: #fff;
-            border-radius: 2px;
-            border: 1px solid #16232b;
-            transition: background-color 0.2s ease;
-          }
-
-          &::after {
-            content: "";
-            position: absolute;
-            left: 4px;
-            top: 6px;
-            width: 5px;
-            height: 9px;
-            border: solid #16232b;
-            border-width: 0 2px 2px 0;
-            transform: rotate(45deg);
             opacity: 0;
-            transition: opacity 0.2s ease;
+            width: 0;
+            height: 0;
+            pointer-events: none;
           }
-        }
-        .checkbox-input:checked + .checkbox-label {
-          &::after {
+
+          label {
+            position: relative;
+            padding-left: 30px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 1.4;
+            user-select: none;
+
+            &::before {
+              content: "";
+              position: absolute;
+              left: 0;
+              top: 2px;
+              width: 15px;
+              height: 15px;
+              background-color: #fff; 
+              border-radius: 2px;
+              border: 1px solid #16232b; 
+              transition: all 0.2s ease;
+            }
+
+
+            &::after {
+              content: "";
+              position: absolute;
+              left: 5px;
+              top: 5px;
+              width: 5px;
+              height: 9px;
+              border: solid #16232b; 
+              border-width: 0 1px 1px 0;
+              transform: rotate(45deg);
+              opacity: 0; 
+              transition: opacity 0.2s ease;
+            }
+          }
+
+          
+          input[type="checkbox"]:checked + label::after {
             opacity: 1;
           }
         }
-      }
       .btn-basic {
         width: 100%;
       }
