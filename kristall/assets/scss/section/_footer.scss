@@ -40,12 +40,25 @@ footer {
               color: #ff8912;
             }
           }
-        }
-        .contacts {
+        }.contacts {
           display: flex;
           flex-direction: row;
           gap: 10px;
+          transition: opacity 0.3s ease;
+          a {
+            padding: 10px 13px;
+            border-radius: 50px;
+            background-color: #fff;
+            &:hover {
+                background-color: #FF8912;
+            }
+          }
+          .special {
+            padding: 10px 15px;
+          }
+          
         }
+        
       }
       .block-two {
         h3 {
@@ -95,6 +108,9 @@ footer {
           font-size: 14px;
           font-weight: 400;
           text-decoration: none;
+          &:hover {
+            color: #ff8912;
+          }
         }
       }
     }
@@ -112,6 +128,10 @@ footer {
         font-weight: 400;
         line-height: 120%;
         opacity: 50%;
+        &:hover {
+          color: #FF8912;
+          opacity: 100%;
+        }
       }
     }
   }

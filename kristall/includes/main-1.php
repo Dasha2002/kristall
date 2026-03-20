@@ -14,9 +14,9 @@
                 <p class="text">Осуществляем обработку листового стекла, повышая его прочность и обеспечивая безопасность для окружающих.</p>
                 <button class="btn-basic popap-btn">Получить консультацию</button>
                 <div class="contacts">
-                    <a href="#"><img src="assets/img/Group 213.svg"></a>
-                    <a href="#"><img src="assets/img/Group 214.svg"></a>
-                    <a href="#"><img src="assets/img/Group 215.svg"></a>
+                    <a href="#"><img src="assets/img/vk.png"></a>
+                    <a href="#"><img src="assets/img/tg.png"></a>
+                    <a href="#" class="special"><img src="assets/img/max.png"></a>
                 </div>
             </div>
         </div>

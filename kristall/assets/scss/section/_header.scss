@@ -32,6 +32,9 @@ header {
                 text-decoration: none;
                 color: #16232B;
                 font-size: 14px;
+                &:hover {
+                    color: #ff8912;
+                }
             }
         }
     }

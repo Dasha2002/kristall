@@ -5,7 +5,10 @@
             <div class="block-one">
                 <div class="inf">
                     <div class="heading">
-                        <img src="assets/img/Group 300.svg">
+                        <div class="img">
+                            <img src="assets/img/Frame (1).svg">
+                        </div>
+                        
                         <h2 class="heading-main-2">Логистика</h2>
                     </div>
 
@@ -13,7 +16,9 @@
                 </div>
                 <div class="inf">
                     <div class="heading">
-                        <img src="assets/img/Group 300.svg">
+                        <div class="img">
+                            <img src="assets/img/Frame (1).svg">
+                        </div>
                         <h2 class="heading-main-2">Срок изготовления<br> до 9 рабочих дней</h2>
                     </div>
 
@@ -21,7 +26,9 @@
                 </div>
                 <div class="inf">
                     <div class="heading">
-                        <img src="assets/img/Group 300.svg">
+                        <div class="img">
+                            <img src="assets/img/Frame (1).svg">
+                        </div>
                         <h2 class="heading-main-2">Собственное производство</h2>
                     </div>
 
@@ -29,7 +36,9 @@
                 </div>
                 <div class="inf">
                     <div class="heading">
-                        <img src="assets/img/Group 300.svg">
+                        <div class="img">
+                            <img src="assets/img/Frame (1).svg">
+                        </div>
                         <h2 class="heading-main-2">Собственный склад</h2>
                     </div>
 
@@ -39,7 +48,9 @@
             <div class="block-two">
                 <div class="inf">
                     <div class="heading">
-                        <img src="assets/img/Group 300.svg">
+                        <div class="img">
+                            <img src="assets/img/Frame (1).svg">
+                        </div>
                         <h2 class="heading-main-2">В наличии более 30 видов стекла</h2>
                     </div>
 

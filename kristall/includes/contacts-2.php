@@ -23,9 +23,11 @@
         </div>
         <div class="block-four">
             <h3>МЕССЕНДЖЕРЫ:</h3>
-            <a href="#"><img src="assets/img/Group 213.svg"></a>
-            <a href="#"><img src="assets/img/Group 214.svg"></a>
-            <a href="#"><img src="assets/img/Group 215.svg"></a>
+            <div class="contacts">
+                    <a href="#"><img src="assets/img/vk.png"></a>
+                    <a href="#"><img src="assets/img/tg.png"></a>
+                    <a href="#" class="special"><img src="assets/img/max.png"></a>
+                </div>
         </div>
     </div>
     <div class="map">
